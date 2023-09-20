@@ -1,0 +1,9 @@
+export const PRIMARY_COLOR = "#4BE4C9";
+export const LIGHT_PRIMARY = "#";
+export const SECONDARY_COLOR = "#F59E0B";
+export const GREY = "#AEAEAE";
+export const GREY1 = "#E9E9E9";
+export const GREY2 = "#C5C5C5";
+export const GREY3 = "#343E42";
+export const WHITE = "#FFF";
+export const TRANS_COLOR = "transparent";

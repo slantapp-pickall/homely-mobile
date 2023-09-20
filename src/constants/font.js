@@ -1,0 +1,15 @@
+export const Poppins_black = "Poppins-black";
+export const Poppins_medium = "Poppins-med";
+export const Poppins_light = "Poppins-light";
+export const Poppins_bold = "Poppins-bold";
+export const Poppins = Poppins;
+export const DMSans_black = "DMSans-black";
+export const DMSans_medium = "DMSans-med";
+export const DMSans_light = "DMSans-light";
+export const DMSans_bold = "DMSans-bold";
+export const DMSans = "DMSans";
+export const Lexend_black = "Lexend-black";
+export const Lexend_medium = "Lexend-med";
+export const Lexend_light = "Lexend-light";
+export const Lexend_bold = "Lexend-bold";
+export const Lexend = Lexend;
