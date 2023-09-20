@@ -5,7 +5,7 @@ import RootNav from "./src/routes/root";
 import {UserProvider} from "./src/contexts";
 import Toast from 'react-native-toast-message'
 
-
+console.ignoredYellowBox = ['Warning:'];
 export default function App() {
 
     const [fontsLoaded] = useFonts({

@@ -72,34 +72,21 @@ const LoginScreen = ({navigation}) => {
   return (
     <ScreenView transparent >
       <View style={styles.container}>
-          <ScrollView>
-            <View style={styles.container}>
-                  <View style={{flexDirection: "row", alignItems: "center", marginTop: HEIGHT * 0.1}}>
+            <View style={{...styles.container}}>
+                  <View style={{flexDirection: "column", alignItems: "center", marginTop: HEIGHT * 0.1}}>
                       <Image
-                          source={require("../../../../assets/icons/login.png")}
-                          style={{width: WIDTH * 0.85, height: WIDTH * 0.9}}
+                          source={require("../../../../assets/logo.png")}
+                          style={{width: 100, height: 100}}
                           resizeMode={"contain"}
                       />
+                      <Text style={{fontSize: 20, marginVertical: 10}}>Homely Mobile</Text>
                   </View>
-                  <CustomTextInput
-                      value={email}
-                      setValue={(val) => {
-                          setEmail(val);
-                          setGoogle(false);
-                      }}
-                      valid={validEmail}
-                      setCheck={setValidEmail}
-                      placeholder={"e.g pindroo@gmail.com"}
-                      title={"Email address"}
-                      style={{width: "100%", marginTop: 5, alignSelf: "center", alignItems: "center"}}
-                      containerStyle={{ marginBottom: 0, alignSelf: "center", marginHorizontal: 50}}
-                  />
+
                   <View style={{marginHorizontal: 20, width: "100%", alignItems: "center", justifyContent: "center"}}>
 
-                      {!google &&
                           <TouchableOpacity
                               style={{
-                                  width: "90%",
+                                  width: "70%",
                                   paddingVertical: 10,
                                   paddingHorizontal: 20,
                                   backgroundColor: "#10B981",
@@ -108,7 +95,7 @@ const LoginScreen = ({navigation}) => {
                                   borderRadius: 10,
                                   flexDirection: "row",
                                   marginTop: 50,
-                                  borderWidth: 1,
+                                  borderWidth: 0,
                               }}
                               activeOpacity={0.65}
                               onPress={() => onContinue()}
@@ -118,24 +105,14 @@ const LoginScreen = ({navigation}) => {
                                   fontSize: 14,
                                   color: "#fff",
                                   marginHorizontal: 20
-                              }}>Continue</Text>
+                              }}>Continue With Email</Text>
                           </TouchableOpacity>
-                      }
 
-                      {google &&
 
                           <>
-                              <View style={{flexDirection: "row", alignItems: "center", justifyContent: "center"}}>
-                                  <View style={{height: 2, backgroundColor: "#000", width: "45%"}}/>
-                                  <Text
-                                      style={{fontFamily: Lexend, fontSize: 13, color: "#000", fontWeight: "700"}}>OR</Text>
-                                  <View style={{height: 2, backgroundColor: "#000", width: "45%"}}/>
-                              </View>
-
-
                               <TouchableOpacity
                                   style={{
-                                      width: "90%", paddingVertical: 10, paddingHorizontal: 20, backgroundColor: "#fff",
+                                      width: "70%", paddingVertical: 10, paddingHorizontal: 20, backgroundColor: "#fff",
                                       alignItems: "center", justifyContent: "center", borderRadius: 10, flexDirection: "row",
                                       marginTop: 50, borderWidth: 1, borderColor: "#10B981"
                                  }}
@@ -147,12 +124,10 @@ const LoginScreen = ({navigation}) => {
 
                               </TouchableOpacity>
                           </>
-                      }
 
                   </View>
 
               </View>
-          </ScrollView>
       </View>
     </ScreenView>
   );
